@@ -25,6 +25,12 @@ WordPress plugin for blocking visitors from specific countries using WP VIP geo-
 - WordPress 5.0+
 - PHP 7.4+
 
+---
+<img width="1688" height="574" alt="Screenshot 2025-10-22 at 11 46 32 PM" src="https://github.com/user-attachments/assets/5d3bd5ef-7131-4504-a06b-e8980e42f3c4" />
+<img width="1352" height="994" alt="Screenshot 2025-10-22 at 11 47 02 PM" src="https://github.com/user-attachments/assets/62743539-74ae-46f2-b63d-fa7b91f90695" />
+<img width="1400" height="486" alt="Screenshot 2025-10-22 at 11 47 56 PM" src="https://github.com/user-attachments/assets/5b91dba5-291c-45a9-bb6a-16b79376cd29" />
+
+
 ## ⚙️ Configuration
 
 Add tracked locations in `geo-blocker-config.php`:
