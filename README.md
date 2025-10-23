@@ -24,19 +24,30 @@ WordPress plugin for blocking visitors from specific countries using WP VIP geo-
 - **[VIP Geo Uniques plugin](https://github.com/Automattic/vip-go-geo-uniques)** (required)
 - WordPress 5.0+
 - PHP 7.4+
-
 ---
-30 Day Summary Widgets: 
+
+## Dashboard Widgets
+- **Today vs Yesterday** - Daily comparison with trend indicator
+- **Daily Average** - 30-day rolling average
+- **Top Country** - Most blocked country
+- **Peak Day** - Busiest blocking day
+- **Weekly Trend** - Week-over-week percentage change 
 <img width="1688" height="574" alt="Screenshot 2025-10-22 at 11 46 32 PM" src="https://github.com/user-attachments/assets/6eb28a1e-cbda-4a02-ba37-d5c6f2f9c3cf" />
 
-Recent Activity (last 200 blocks): 
+## Recent Activity (last 200 blocks)
+- **Total Requests, Unique IPs, Avg per IP** - at a glance, blocks vs same IP
+- **Recent Block Data** - Time, Country, IP Address, URL Attempted, Referer
 <img width="1612" height="1165" alt="Screenshot 2025-10-23 at 12 43 25 AM" src="https://github.com/user-attachments/assets/e03e911a-55d1-4e75-94a4-e1937205b57d" />
 
-Attack Pattern Analysis (Top Repeat IPs + Top Targeted URLs): 
+### Attack Pattern Analysis
+- Top Repeat IPs + Top Targeted URLs
 <img width="1470" height="507" alt="Screenshot 2025-10-23 at 12 44 00 AM" src="https://github.com/user-attachments/assets/1828b0d3-84f3-4b50-9425-6d38ccf74e4c" />
 
-Blocked Page Template: 
+### Blocked Page Template: 
 <img width="2024" height="1128" alt="blocked_page_template" src="https://github.com/user-attachments/assets/691a8348-f40c-45da-9032-3a416eed29d5" />
+Customize the block page at `templates/blocked-page.php`
+
+---
 
 ## ⚙️ Configuration
 
@@ -53,16 +64,6 @@ define( 'LOADUP_BLOCKED_COUNTRIES', 'CN,RU,SG,BR' );
 ```
 
 Use [ISO country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) (CN, RU, US, etc.)
-
-Customize the block page at `templates/blocked-page.php`
-
-## 📊 Dashboard Widgets
-
-- **Today vs Yesterday** - Daily comparison with trend indicator
-- **Daily Average** - 30-day rolling average
-- **Top Country** - Most blocked country
-- **Peak Day** - Busiest blocking day
-- **Weekly Trend** - Week-over-week percentage change
 
 ## 🗄️ Data Storage
 
@@ -82,19 +83,28 @@ geo-blocker-plugin/
     └── blocked-page.php        # Block page template
 ```
 
-## 🐛 Troubleshooting
+## 📝 Changelog
 
-**Not blocking visitors?**
-- Verify you're on WP VIP hosting
-- Confirm [VIP Geo Uniques](https://github.com/Automattic/vip-go-geo-uniques) is installed and active
-- Test from a blocked country (use VPN)
+### Version 1.2.0 (Current)
+- ✨ Added automatic monthly archiving
+- ✨ Added 12-month historical data view
+- ✨ Separated blocked page into template file
+- 🎨 Improved dashboard UI with better widgets
+- 📊 Enhanced activity log with IP search
+- 🔧 Removed migration code (production-ready)
 
-**No stats showing?**
-- No visitors from blocked countries yet
-- Check if caching is interfering
+### Version 1.1.0
+- ✨ Added activity log (last 200 requests)
+- ✨ Added attack pattern analysis
+- ✨ Added IP search functionality
+- 🔄 Migrated from transients to database storage
+- 📊 Enhanced dashboard with more metrics
 
-## 📝 Version
-**1.2.0** - Production ready with automatic archiving
+### Version 1.0.0
+- 🎉 Initial release
+- 🌍 Country-based blocking
+- 📊 Basic statistics dashboard
+- ⚡ Lightweight and performant
 
 ## 👤 Author
 Justin Merrell
