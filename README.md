@@ -93,21 +93,10 @@ geo-blocker-plugin/
 - No visitors from blocked countries yet
 - Check if caching is interfering
 
-## 🚀 Upcoming Features
-
-- Component-based architecture
-- Dashboard widget visibility toggles
-- Custom widget ordering
-- CSV export functionality
-- Settings page for managing blocked countries via UI
-- IP whitelist functionality
-
 ## 📝 Version
-
 **1.2.0** - Production ready with automatic archiving
 
 ## 👤 Author
-
 Justin Merrell
 
 ## 📄 License
