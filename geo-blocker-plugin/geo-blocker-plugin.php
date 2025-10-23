@@ -2,7 +2,7 @@
 /**
  * Plugin Name: LoadUp - Geo Blocking
  * Description: Blocks visitors from specified countries using WP VIP geo-targeting
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: Justin Merrell
  */
 
