@@ -100,5 +100,4 @@ geo-blocker-plugin/
 Justin Merrell
 
 ## 📄 License
-
-GPL v2 or later
+GPL-3.0
