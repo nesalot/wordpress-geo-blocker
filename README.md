@@ -26,10 +26,17 @@ WordPress plugin for blocking visitors from specific countries using WP VIP geo-
 - PHP 7.4+
 
 ---
-<img width="1688" height="574" alt="Screenshot 2025-10-22 at 11 46 32 PM" src="https://github.com/user-attachments/assets/5d3bd5ef-7131-4504-a06b-e8980e42f3c4" />
-<img width="1352" height="994" alt="Screenshot 2025-10-22 at 11 47 02 PM" src="https://github.com/user-attachments/assets/62743539-74ae-46f2-b63d-fa7b91f90695" />
-<img width="1400" height="486" alt="Screenshot 2025-10-22 at 11 47 56 PM" src="https://github.com/user-attachments/assets/5b91dba5-291c-45a9-bb6a-16b79376cd29" />
+30 Day Summary Widgets: 
+<img width="1688" height="574" alt="Screenshot 2025-10-22 at 11 46 32 PM" src="https://github.com/user-attachments/assets/6eb28a1e-cbda-4a02-ba37-d5c6f2f9c3cf" />
 
+Recent Activity (last 200 blocks): 
+<img width="1612" height="1165" alt="Screenshot 2025-10-23 at 12 43 25 AM" src="https://github.com/user-attachments/assets/e03e911a-55d1-4e75-94a4-e1937205b57d" />
+
+Attack Pattern Analysis (Top Repeat IPs + Top Targeted URLs): 
+<img width="1470" height="507" alt="Screenshot 2025-10-23 at 12 44 00 AM" src="https://github.com/user-attachments/assets/1828b0d3-84f3-4b50-9425-6d38ccf74e4c" />
+
+Blocked Page Template: 
+<img width="2024" height="1128" alt="blocked_page_template" src="https://github.com/user-attachments/assets/691a8348-f40c-45da-9032-3a416eed29d5" />
 
 ## ⚙️ Configuration
 
@@ -65,14 +72,6 @@ Customize the block page at `templates/blocked-page.php`
 - **Total: ~52 KB** (extremely lightweight)
 
 Monthly archives run automatically on the 1st of each month at 2:00 AM.
-
-## 🔒 What Gets Blocked
-
-✅ Visitors from blocked countries
-❌ WordPress admin/dashboard
-❌ AJAX requests
-❌ REST API calls
-❌ VIP support staff
 
 ## 📁 File Structure
 ```
